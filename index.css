@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    background-color: black;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    gap: 7px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px; /
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; 
+    border-radius: 4px; 
+}
+
+ul li a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+main {
+    min-height: calc(100vh - 200px);
+    padding: 200px 20px; 
+    background-color: rgb(160, 214, 231);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    font-size: 14px; 
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0; 
+}
+
+.container{
+    background-color: rgb(229, 188, 188);
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.container h1{
+   padding-bottom: 40px;
+   text-decoration: underline;
+   text-align: center;
+}
+.container 
+input::placeholder {
+    color: rgb(0, 0, 0); 
+    opacity: 0.3; 
+}
+.container .content{
+    text-align: center;
+}
+#Email{
+    width: 260px;
+    
+}
+#Name{
+    width: 260px;
+}
+#submitBtn{
+    color: white;
+    background-color: black;
+    width: 70px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        background-color: rgb(147, 179, 255);
+        padding-top: 300px;
+
+    }
+    
+    .container {
+        font-size: 14px; 
+        padding: 15px; 
+    }
+    
+    nav {
+        flex-direction: column;
+        padding: 10px; 
+    }
+    
+    ul li {
+        font-size: 16px; 
+    }
+    
+    .logo {
+        padding: 6px 0; 
+    }
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container1 h2{
+    margin: 50px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}

@@ -1,0 +1,50 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+>
+  <defs>
+    <filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feFlood flood-color="rgba(255, 255, 255, 0.3)" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#f1)">
+    <path
+      d="M4 12h56v40H4z"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="2"
+      rx="4"
+      ry="4"
+    />
+    <path
+      d="M4 12l28 20 28-20"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="2"
+    />
+    <path
+      d="M16 32l4 6 6-7.5"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="3"
+    />
+  </g>
+  <text
+    x="32"
+    y="50"
+    font-family="Arial"
+    font-size="10"
+    fill="#FFFFFF"
+    text-anchor="middle"
+  >
+  </text>
+</svg>
